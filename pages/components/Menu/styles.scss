@@ -1,0 +1,113 @@
+.menu-wrapper,
+.sub-menu1,
+.sub-menu2 {
+  height: auto;
+  min-height: 375.5px;
+  width: 100%;
+  min-width: 150px;
+  max-width: 220px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  position: relative;
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: black;
+    .menu-item-content {
+      display: flex;
+      align-items: center;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    svg {
+      height: 13px;
+    }
+  }
+  .sub-menu1,
+  .sub-menu2 {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 205px;
+    display: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+.menu-item:hover {
+  background-color: #f8f8f8;
+  > .active {
+    display: block;
+    &:hover {
+      .sub-menu2 .active {
+        display: block;
+      }
+    }
+  }
+}
+
+i[class*="icon-cps-"] {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(https://cdn.cellphones.com.vn/media/icon/icons_menubar-11.svg);
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+
+.icon-cps-3 {
+  background-position: 5px -182px;
+}
+.icon-cps-380 {
+  background-size: 280px !important;
+  background-position: -21px -168px;
+}
+.icon-cps-4 {
+  background-size: 280px !important;
+  background-position: -47px -168px;
+}
+.icon-cps-220 {
+  background-position: -80px -182px;
+}
+.icon-cps-610 {
+  background-position: -107px -182px;
+}
+.icon-cps-845 {
+  background-position: -135px -182px;
+}
+.icon-cps-30 {
+  background-size: 350px !important;
+  background-position: -192px -214px;
+}
+.icon-cps-tcdm {
+  background-position: -192px -182px;
+}
+.icon-cps-29 {
+  background-size: 280px !important;
+  background-position: -204px -167px;
+}
+.icon-cps-123 {
+  background-position: -247px -182px;
+}
+.icon-cps-tech {
+  background-size: 280px !important;
+  background-position: -256px -168px;
+}
+.icon-cps-promotion {
+  background-position: -23px -210px;
+}
+
+
+@media (max-width: 1024px) {
+  .menu-wrapper {
+    display: none !important;
+  }
+} ;
+
