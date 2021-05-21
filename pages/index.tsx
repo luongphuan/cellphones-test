@@ -4,7 +4,6 @@ import NavigationBar from './components/NavigationBar';
 import Menu from './components/Menu';
 import { locations, menuItems } from '../constant/data';
 import Carousel from './components/Carousel';
-import './styles.scss';
 // import { useViewport } from '../Ultils/CustomHooks';
 import Select from './components/Select';
 

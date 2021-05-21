@@ -24,3 +24,14 @@ a {
 .menu-background {
   background-color: #d70018;
 }
+
+.slider-container {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .right-container {
+    display: none !important;
+  }
+};
+
